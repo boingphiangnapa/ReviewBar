@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".DetailPage">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+      <LinearLayout
+          android:padding="10dp"
+          android:background="#CEFFFFFF"
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          <ImageButton
+              android:id="@+id/btn_back_page"
+              android:background="@drawable/background_btn"
+              android:src="@drawable/ic_arrow_back_black_24dp"
+              android:layout_width="50dp"
+              android:layout_height="50dp" />
+          <TextView
+              android:id="@+id/Name_bar"
+              android:textSize="25sp"
+              android:textColor="@android:color/black"
+              android:layout_marginLeft="35dp"
+              android:layout_gravity="center"
+              android:text="Name_bar"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+          <View
+              android:layout_weight="1"
+              android:layout_width="0dp"
+              android:layout_height="1dp"
+              />
+          <ImageButton
+              android:id="@+id/image_note"
+              android:layout_gravity="center"
+              android:background="@drawable/ic_event_note_black_24dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+      </LinearLayout>
+   </RelativeLayout>
+    <ImageView
+        android:id="@+id/image_background"
+        android:background="@drawable/ic_add_circle_outline_black_24dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+   <LinearLayout
+       android:layout_marginTop="10dp"
+       android:orientation="horizontal"
+       android:padding="10dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <ImageView
+           android:background="@drawable/ic_phone_black_24dp"
+           android:layout_width="50dp"
+           android:layout_height="50dp" />
+       <TextView
+           android:id="@+id/text_phone_call"
+           android:text="044-*******"
+           android:textSize="24sp"
+           android:textColor="@android:color/background_dark"
+           android:layout_marginLeft="10dp"
+           android:layout_gravity="center"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+   </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/text_store_open"
+            android:text="Time Open"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/text_address"
+        android:text="address"
+        android:padding="10dp"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        android:background="#CEFFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_comment"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>
